@@ -1,7 +1,6 @@
 import React from "react";
 
-const BlogCard = (props) => {
-  const { img, title, desc } = props;
+const BlogCard = ({ img, title, desc }) => {
   return (
     <>
       <div className="m-2 max-w-sm bg-white rounded-lg border border-gray-200 shadow-2xl">

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import BlogCard from "./BlogCard";
 
-let Blog = [
+let blog = [
   {
     img: `https://img.freepik.com/free-vector/girl-dreaming-with-empty-callout_1308-16906.jpg?w=826&t=st=1663601039~exp=1663601639~hmac=998c6103beffa696b1932345ee6a8201d6fc173430603eb5546a42b49a7bdf36`,
     title: `Blog 1`,
@@ -35,7 +35,7 @@ const BlogExerp = () => {
       <div className="align-center" id="blog">
         <p className="text-center text-4xl py-5 font-black">My Thoughts</p>
         <div className="flex flex-wrap justify-evenly">
-          {Blog.map((e, i) => {
+          {blog.map((e, i) => {
             return (
               <BlogCard key={i} img={e.img} title={e.title} desc={e.desc} />
             );
